@@ -60,6 +60,7 @@ text-align: justify;
 
 
 
+
     </style>
 
 </head>
@@ -171,7 +172,7 @@ text-align: justify;
                                 </div>
                                 <div id="collapse2" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <p>you want to do a quick smoke test then manual testing is best.</p>
+                                        <p>If you want to do a quick smoke test then manual testing is best.</p>
 
                                         <p>If you want to bring a thorough intervention to your application
                                             (web/Desktop/Mobile), then it can be achieved only through manual testing.
@@ -282,7 +283,7 @@ text-align: justify;
                                 <div id="collapse5" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>It's all based on the product, tools and technologies that are involved in
-                                            the project. The cost of the service is between $10 to $35. So once after
+                                            the project. The cost of the service is between $10 to $35. So please <a href="#contact">contact</a> me and once after
                                             the project evaluation, I will let you know the exact cost.</p>
 
                                     </div>
@@ -428,8 +429,8 @@ text-align: justify;
                                 <div id="collapse10" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>It's all based on the product, tools and technologies that are involved in
-                                            the project. The cost of the service is between $20 to $45. So once after
-                                            the project evaluation, I will let you know the exact cost.</p>
+                                            the project. The cost of the service is between $20 to $45. Please <a href="#contact">contact</a> me and once
+                                            the project is evaluated, I will let you know the exact cost.</p>
 
                                     </div>
                                 </div>
@@ -544,7 +545,7 @@ text-align: justify;
                                             involved in the
                                             project.</p>
 
-                                        <p>The cost of the services is $10 to $25. So once the project is evaluated I
+                                        <p>The cost of the services is $10 to $25. So please <a href="#contact">contact</a> me and once the project is evaluated I
                                             will let you know the exact cost.</p>
                                     </div>
                                 </div>
@@ -678,8 +679,8 @@ text-align: justify;
                                     <div class="panel-body">
                                         <p>It's all based on the website structure and complexity in extracting the data
                                             from it.</br>
-                                            The cost of the service is between $7 to $20. So once the project is
-                                            evaluated I will let you know the exact cost.
+                                            The cost of the service is between $7 to $20. So <a href="#contact">contact</a> me and once the project is
+                                            reviewed I will let you know the exact cost.
                                         </p>
                                     </div>
                                 </div>
@@ -736,119 +737,64 @@ text-align: justify;
 </div>
 
 
-<div class="wrapper">
-  <h2>Contact us</h2>
-  <div id="error_message"></div>
-  <form id="myform" onsubmit="return validate();" method="post" action="send_form_email.php">
-    <div class="input_field">
-        <input type="text" placeholder="Name" id="name">
-    </div>
-    <div class="input_field">
-        <input type="text" placeholder="Subject" id="subject">
-    </div>
-    <div class="input_field">
-        <input type="text" placeholder="Phone" id="phone">
-    </div>
-    <div class="input_field">
-        <input type="text" placeholder="Email" id="email">
-    </div>
-    <div class="input_field">
-        <textarea placeholder="Message" id="message"></textarea>
-    </div>
-    <div class="btn">
-        <input type="submit">
-    </div>
-  </form>
-</div>
-
 <!-- Contact Section-->
-<!--<section class="page-section" id="contact">-->
-<!--    <div class="container">-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="" action="https://formspree.io/f/xknkblbe"
+                      method="POST">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..."
+                               required>
+                        <label for="name">Full name</label>
 
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com"
+                               required/>
+                        <label for="email">Email address</label>
 
-<!--        &lt;!&ndash; Contact Section Heading&ndash;&gt;-->
-<!--        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>-->
-<!--        &lt;!&ndash; Icon Divider&ndash;&gt;-->
-<!--        <div class="divider-custom">-->
-<!--            <div class="divider-custom-line"></div>-->
-<!--            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>-->
-<!--            <div class="divider-custom-line"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash; Contact Section Form&ndash;&gt;-->
-<!--        <div class="row justify-content-center">-->
-<!--            <div class="col-lg-8 col-xl-7">-->
-<!--                &lt;!&ndash; * * * * * * * * * * * * * * *&ndash;&gt;-->
-<!--                &lt;!&ndash; * * SB Forms Contact Form * *&ndash;&gt;-->
-<!--                &lt;!&ndash; * * * * * * * * * * * * * * *&ndash;&gt;-->
-<!--                &lt;!&ndash; This form is pre-integrated with SB Forms.&ndash;&gt;-->
-<!--                &lt;!&ndash; To make this form functional, sign up at&ndash;&gt;-->
-<!--                &lt;!&ndash; https://startbootstrap.com/solution/contact-forms&ndash;&gt;-->
-<!--                &lt;!&ndash; to get an API token!&ndash;&gt;-->
-<!--                <div id="error_message"></div>-->
-<!--                <form class="contact1-form">-->
-<!--                    &lt;!&ndash; Name input&ndash;&gt;-->
-<!--                    <div class="form-floating mb-3">-->
-<!--                        <input class="form-control" id="name" type="text" placeholder="Enter your name..."-->
-<!--                        />-->
-<!--                        <label for="name">Full name</label>-->
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 456-7890"
+                               />
+                        <label for="phone">Phone number</label>
 
-<!--                    </div>-->
-<!--                    &lt;!&ndash; Email address input&ndash;&gt;-->
-<!--                    <div class="form-floating mb-3">-->
-<!--                        <input class="form-control" id="email" type="email" placeholder="name@example.com"-->
-<!--                               data-sb-validations="required,email"/>-->
-<!--                        <label for="email">Email address</label>-->
-<!--                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>-->
-<!--                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; Phone number input&ndash;&gt;-->
-<!--                    <div class="form-floating mb-3">-->
-<!--                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"-->
-<!--                               data-sb-validations="required"/>-->
-<!--                        <label for="phone">Phone number</label>-->
-<!--                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; Message input&ndash;&gt;-->
-<!--                    <div class="form-floating mb-3">-->
-<!--                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."-->
-<!--                                  style="height: 10rem" data-sb-validations="required"></textarea>-->
-<!--                        <label for="message">Message</label>-->
-<!--                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; Submit success message&ndash;&gt;-->
-<!--                    &lt;!&ndash;&ndash;&gt;-->
-<!--                    &lt;!&ndash; This is what your users will see when the form&ndash;&gt;-->
-<!--                    &lt;!&ndash; has successfully submitted&ndash;&gt;-->
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..."
+                                  required></textarea>
+                        <label for="message">Message</label>
+                    </div>
 
-<!--                    <div class="d-none" id="submitSuccessMessage">-->
-<!--                        &lt;!&ndash;-->
-<!--                        <div class="text-center mb-3">-->
-<!--                            <div class="fw-bolder">Form submission successful!</div>-->
-<!--                            To activate this form, sign up at-->
-<!--                            <br/>-->
-<!--                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
-<!--                        </div>-->
-<!--                        &ndash;&gt;-->
-<!--                    </div>-->
-
-<!--                    &lt;!&ndash; Submit error message&ndash;&gt;-->
-<!--                    &lt;!&ndash;&ndash;&gt;-->
-<!--                    &lt;!&ndash; This is what your users will see when there is&ndash;&gt;-->
-<!--                    &lt;!&ndash; an error submitting the form&ndash;&gt;-->
-
-<!--                    <div class="d-none" id="submitErrorMessage">-->
-<!--                        <div class="text-center text-danger mb-3"></div>-->
-
-<!--                    </div>-->
-
-<!--                    &lt;!&ndash; Submit Button&ndash;&gt;-->
-<!--                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+                    <!-- Submit Button-->
+                    <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer-->
 <footer class="footer text-center">
@@ -894,14 +840,15 @@ text-align: justify;
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- Bootstrap core JS-->
 
-<script src="js/contact_scripts.js"></script>
+<!-- Core theme JS-->
+<!--<script src="js/contact_scripts.js"></script>-->
 
 <script>
     function activaTab(tab){
     $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
-
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -912,6 +859,7 @@ text-align: justify;
     function activaTab(tab){
     $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
+
 
 
 
