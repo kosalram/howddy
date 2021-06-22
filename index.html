@@ -58,6 +58,7 @@ text-align: justify;
 }
 
 
+
     </style>
 
 </head>
@@ -76,7 +77,8 @@ text-align: justify;
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Services</a>
                 </li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#aboutMe">About</a>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                                     href="#aboutMe">About</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                                                      href="#contact">Contact</a></li>
@@ -736,6 +738,26 @@ text-align: justify;
 <!-- Contact Section-->
 <section class="page-section" id="contact">
     <div class="container">
+
+        <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();" method="post" action="send_form_email.php">
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Phone" id="telephone">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Message" id="comments"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+
         <!-- Contact Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>
         <!-- Icon Divider-->
@@ -754,13 +776,14 @@ text-align: justify;
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="" method="post" action="send_form_email.php" >
+                <div id="error_message"></div>
+                <form onsubmit="return validate();" id="contactForm" method="post" action="send_form_email.php">
                     <!-- Name input-->
                     <div class="form-floating mb-3">
                         <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                               data-sb-validations="required"/>
+                        />
                         <label for="name">Full name</label>
-                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+
                     </div>
                     <!-- Email address input-->
                     <div class="form-floating mb-3">
@@ -807,7 +830,7 @@ text-align: justify;
                     <!-- an error submitting the form-->
 
                     <div class="d-none" id="submitErrorMessage">
-                      <div class="text-center text-danger mb-3"></div>
+                        <div class="text-center text-danger mb-3"></div>
 
                     </div>
 
@@ -833,14 +856,16 @@ text-align: justify;
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">My linkedin url</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/kosalram/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/kosalram/"><i
+                        class="fab fa-fw fa-linkedin-in"></i></a>
 
             </div>
             <!-- Footer About Text-->
             <div class="col-lg-4" id="aboutMe">
                 <h4 class="text-uppercase mb-4">About Me</h4>
                 <p class="lead mb-0">
-                    This is Ram, Am a test automation engineer and a web scraper professional. If you have any opportunity on these then feel free to
+                    This is Ram, Am a test automation engineer and a web scraper professional. If you have any
+                    opportunity on these then feel free to
                     <a href="#contact">contact</a> me.
                 </p>
             </div>
@@ -853,8 +878,6 @@ text-align: justify;
 </div>
 
 
-
-
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
@@ -863,11 +886,14 @@ text-align: justify;
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+<script src="js/contact_scripts.js"></script>
+
 <script>
     function activaTab(tab){
     $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
+
 
 
 
@@ -905,6 +931,7 @@ text-align: justify;
     function activaTab(tab){
     $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
+
 
 
 
