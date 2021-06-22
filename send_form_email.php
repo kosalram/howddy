@@ -3,7 +3,7 @@ if(isset($_POST['email']) && $_POST['url'] == '' ) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
      $email_to = "kosalram80@gmail.com";
-    $email_subject = "From Orexel contact us form!";
+    $email_subject = "From Howddy contact us form!";
      
      
     function died($error) {
@@ -69,6 +69,6 @@ $headers = 'From: '.$email_from."\r\n".
  
 <h3>Thank you for contacting us. We will be in touch with you very soon.</h3>
 <head>
-<meta http-equiv="refresh" content="3; URL=http://www.howddy.com/">
+<meta http-equiv="refresh" content="3; URL=https://kosalram.github.io/howddy/index.html">
 </head>
  
