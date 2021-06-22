@@ -895,6 +895,48 @@ text-align: justify;
 };
 </script>
 
+<script>
+    ('.contact1-form').on('submit',function(e){
+        //optional validation code here
+
+        e.preventDefault();
+
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbwPWS0CEgGSSizz8vpWcf0_flZEnU-9gSHK6dXv1SOgUzB1t3jnTUU8oePJtpsS3zZSTA/exec",
+            method: "POST",
+            dataType: "json",
+            data: $(".contact1-form").serialize(),
+            success: function(response) {
+
+                if(response.result == "success") {
+                    $('.contact1-form')[0].reset();
+                    alert('Thank you for contacting us.');
+                    return true;
+                }
+                else {
+                    alert("Something went wrong. Please try again.")
+                }
+            },
+            error: function() {
+
+                alert("Something went wrong. Please try again.")
+            }
+        })
+    });
+</script>
+
+<!--
+Deployment ID
+
+AKfycbwPWS0CEgGSSizz8vpWcf0_flZEnU-9gSHK6dXv1SOgUzB1t3jnTUU8oePJtpsS3zZSTA
+
+Web app
+URL
+
+https://script.google.com/macros/s/AKfycbwPWS0CEgGSSizz8vpWcf0_flZEnU-9gSHK6dXv1SOgUzB1t3jnTUU8oePJtpsS3zZSTA/exec
+
+-->
+
 
 
 
