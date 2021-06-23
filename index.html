@@ -57,6 +57,56 @@ padding: 2px;
 text-align: justify;
 }
 
+/*
+
+box style
+*/
+
+.box{margin-top:-13px; border:1px solid lightgray; width:1092px; padding:20px;}
+.box .info .title{text-align: center;font-family: Arial, Helvetica, sans-serif !important; font-size: 20px;}
+.box .info p{font-family: Arial, Helvetica, sans-serif !important; font-size: 16px; color: #434343; line-height: 2.0em; margin: 20px;text-align:justify;}
+.box .info ul > li{list-style-type: square;color: #434343; line-height: 2.0em; margin: 20px;text-align:justify;}
+.box .info {}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 35px;
+
+}
+
+#customers{
+padding:10px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #eee;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #1abc9c;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -136,161 +186,169 @@ text-align: justify;
                        aria-controls="nav-about" aria-selected="false">Lead Generation</a>
                 </div>
             </nav>
-            <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-content w3-animate-opacity py-3 px-3 px-sm-0" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-manualTesting" role="tabpanel"
                      aria-labelledby="nav-home-tab">
+
                     <div class="container">
-                        <div class="panel-group" id="accordion">
+                        <div class="row">
+                            <!-- Boxes de Acoes -->
+                            <div class="col-xs-12 col-sm-6 col-lg-4">
+                                <div class="box">
+                                    <div class="info">
+                                        <div>
+                                            <!--                                        <h3 class="title">Manual Testing</h3>-->
+                                            <p>
+                                                In manual testing I used to compare the system against the defined
+                                                requirements or user stories to identify bugs manually, review the
+                                                application and assist the development team in creating a defect-free
+                                                software.
+                                            </p>
+                                            <p>
+                                                <b>When do you need my manual testing service?</b>
+                                            <ul>
+                                                <li>
+                                                    If you want to do a quick smoke test of your system/application or
+                                                    if
+                                                    you want to bring a thorough intervention to your application
+                                                    (web/Desktop/Mobile), then it can be achieved through manual
+                                                    testing.
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapse1">What is Manual Testing?</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>Manual testing is to compare the system against the defined requirements or
-                                            user
-                                            stories to identify bugs manually, review the application and assist the
-                                            development team in creating a defect-free software.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="panel-group" id="accordion">
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapse2">When do you need Manual Testing?</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>If you want to do a quick smoke test then manual testing is best.</p>
-
-                                        <p>If you want to bring a thorough intervention to your application
-                                            (web/Desktop/Mobile), then it can be achieved only through manual testing.
-                                            It is
-                                            inevitable in ad hoc or exploratory testing. Also, there are some workflows
-                                            which require human intervention particularly.</p>
-
-                                        <p>If your project is small and simple then manual testing is the best choice.
-                                            It
-                                            removes the extra cost and time compared to the automation testing.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="panel-group" id="accordion">
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapse3">What can be done by a Manual Testing?</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>When something went wrong in the System Under Test (SUT) then manual testers
-                                            can
-                                            act swiftly to raise and retest the problem.</p>
-                                        <p>The software tester executes the test cases and generates the test reports
-                                            manually.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="panel-group" id="accordion">
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapse4">What are the tools used in Manual testing?</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <table class="table table-hover table-striped">
-                                                    <thead>
-                                                    <tr class="thead-dark">
-
-                                                        <th>Tools</th>
-                                                        <th>Description</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td style="max-width:300px">
-                                                            <h6>TestLink</h6>
-                                                        </td>
-                                                        <td>
-                                                            A free open source test management tool that pairs the
-                                                            requirements with test cases.
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="max-width:300px">
-                                                            <h6>Jira, Trello, Bugzilla</h6>
-                                                        </td>
-                                                        <td>
-                                                            Most popular issue tracking tools for software testers.
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="max-width:300px">
-                                                            <h6>BrowserStack, Browser Shots</h6>
-                                                        </td>
-                                                        <td>
-                                                            Cross-browser testing tools
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </li>
+                                                <li>
+                                                    If your project is small and simple then manual testing is the best
+                                                    choice. It removes the extra cost and time compared to the
+                                                    automation
+                                                    testing.
+                                                </li>
+                                                <li>
+                                                    It is inevitable in ad hoc or exploratory testing. Also, there are
+                                                    some
+                                                    workflows which require direct human intervention.
+                                                </li>
+                                            </ul>
+                                            </p>
                                         </div>
+                                        <div>
+                                            <p><b>Tools that I used in executing the manual testing</b></p>
+                                            <table id="customers">
+                                                <tr>
+                                                    <th>Tools</th>
+                                                    <th>Description</th>
 
+                                                </tr>
+                                                <tr>
+                                                    <td>TestLink</td>
+                                                    <td>A free open source test management tool that pairs the
+                                                        requirements with test cases.
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Jira, Trello, Bugzilla</td>
+                                                    <td>
+                                                        Most popular issue tracking tools for software testers.
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>BrowserStack, Browser Shots</td>
+                                                    <td>Cross-browser testing tools</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <p><b>What are all the common inputs that I need to do manual testing?</b>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Defined business, functional requirements or user stories
+                                                </li>
+                                                <li>
+                                                    Architecture or system design documents
+                                                </li>
+                                                <li>
+                                                    Project Timelines
+                                                </li>
+                                                <li>
+                                                    Demo Session
+                                                </li>
+                                                <li>
+                                                    Sample Test Documentation
+                                                </li>
+                                                <li>
+                                                    Sample Defect Report
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p><b>How do I process my manual testing?</b>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Discussing and Analysing the requirements
+                                                </li>
+                                                <li>
+                                                    Building the test plan
+                                                </li>
+                                                <li>
+                                                    Writing Test cases
+                                                </li>
+                                                <li>
+                                                    Executing Test Cases
+                                                </li>
+                                                <li>
+                                                    Raising the bugs
+                                                </li>
+                                                <li>
+                                                    Retesting the fixed bugs
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p><b>What are all the deliverables that I delivered in manual testing?</b>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Test Plan
+                                                </li>
+                                                <li>
+                                                    Test Cases
+                                                </li>
+                                                <li>
+                                                    Requirements Traceability Matrix (RTM)
+                                                </li>
+                                                <li>
+                                                    Execution/Status reports with metrics
+                                                </li>
+                                                <li>
+                                                    Defect reports
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <!--                                        <h3 class="title">Manual Testing</h3>-->
+                                            <p>
+                                                <b>What is the cost of my manual testing service?</b>
+                                            </p>
+                                            <p>
+                                                It's all based on the product, tools and technologies that are involved
+                                                in the project. The cost of the service is between $10 to $35. So once
+                                                after the project evaluation, I will let you know the exact cost.
+
+                                            </p>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
+
+                            <!-- /Boxes de Acoes -->
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="panel-group" id="accordion">
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                           href="#collapse5">How much does a Manual Tester cost?</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>It's all based on the product, tools and technologies that are involved in
-                                            the project. The cost of the service is between $10 to $35. So please <a href="#contact">contact</a> me and once after
-                                            the project evaluation, I will let you know the exact cost.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="tab-pane fade" id="nav-testAutomation" role="tabpanel"
                      aria-labelledby="nav-profile-tab">
@@ -429,7 +487,8 @@ text-align: justify;
                                 <div id="collapse10" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <p>It's all based on the product, tools and technologies that are involved in
-                                            the project. The cost of the service is between $20 to $45. Please <a href="#contact">contact</a> me and once
+                                            the project. The cost of the service is between $20 to $45. Please <a
+                                                    href="#contact">contact</a> me and once
                                             the project is evaluated, I will let you know the exact cost.</p>
 
                                     </div>
@@ -545,7 +604,8 @@ text-align: justify;
                                             involved in the
                                             project.</p>
 
-                                        <p>The cost of the services is $10 to $25. So please <a href="#contact">contact</a> me and once the project is evaluated I
+                                        <p>The cost of the services is $10 to $25. So please <a
+                                                href="#contact">contact</a> me and once the project is evaluated I
                                             will let you know the exact cost.</p>
                                     </div>
                                 </div>
@@ -679,7 +739,8 @@ text-align: justify;
                                     <div class="panel-body">
                                         <p>It's all based on the website structure and complexity in extracting the data
                                             from it.</br>
-                                            The cost of the service is between $7 to $20. So <a href="#contact">contact</a> me and once the project is
+                                            The cost of the service is between $7 to $20. So <a
+                                                    href="#contact">contact</a> me and once the project is
                                             reviewed I will let you know the exact cost.
                                         </p>
                                     </div>
@@ -777,13 +838,14 @@ text-align: justify;
                     <!-- Phone number input-->
                     <div class="form-floating mb-3">
                         <input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 456-7890"
-                               />
+                        />
                         <label for="phone">Phone number</label>
 
                     </div>
                     <!-- Message input-->
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" name="message" id="message" type="text" placeholder="Enter your message here..."
+                        <textarea class="form-control" name="message" id="message" type="text"
+                                  placeholder="Enter your message here..."
                                   required></textarea>
                         <label for="message">Message</label>
                     </div>
@@ -810,7 +872,8 @@ text-align: justify;
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">My linkedin url</h4>
-                <a class="btn btn-outline-light btn-social mx-1"  target="_blank" href="https://www.linkedin.com/in/kosalram/"><i
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                   href="https://www.linkedin.com/in/kosalram/"><i
                         class="fab fa-fw fa-linkedin-in"></i></a>
 
             </div>
@@ -845,12 +908,6 @@ text-align: justify;
 <!-- Core theme JS-->
 <!--<script src="js/contact_scripts.js"></script>-->
 
-<script>
-    function activaTab(tab){
-    $('.nav-tabs a[href="#' + tab + '"]').tab('show');
-};
-</script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -859,34 +916,6 @@ text-align: justify;
     function activaTab(tab){
     $('.nav-tabs a[href="#' + tab + '"]').tab('show');
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
