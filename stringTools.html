@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+String: <input type="text" id="myText" value="">
+Character: <input type="text" id="myChar" value="">
+Resutl:<input type="text" id="result" value="">
+<button onclick="myFunction()">Try it</button>
+</body>
+<script>
+function myFunction() {
+    var myTextVal = document.getElementById("myText").value;
+    var myCharVal = document.getElementById("myChar").value;
+    var result = myTextVal.substring(0, myTextVal.indexOf(myCharVal));
+    document.getElementById("result").value = result;
+}
+</script>
+</html>
