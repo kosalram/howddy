@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mail($to, $subject, $message, $headers)) {
             // If mail sent, show success message and redirect to home page
             echo "
-            <html>
+            <!DOCTYPE html>
             <head>
                 <title>Form Submission Successful</title>
                 <meta http-equiv='refresh' content='5;url=https://www.howddy.com'>
