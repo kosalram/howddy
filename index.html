@@ -696,88 +696,70 @@ opacity: 0;
         <div class="container">
             <div class="container mt-5">
                 <h2>Product Information Form</h2>
-                <form action="https://formspree.io/f/mvgpywbn" method="POST" novalidate>
-                    <!-- Product Name -->
-                    <div class="mb-3">
-                        <label for="productName" class="form-label">Product Name</label>
-                        <input type="text" class="form-control" id="productName" name="productName" required>
-                        <div class="invalid-feedback">
-                            Product Name is required.
-                        </div>
-                    </div>
-            
-                    <!-- Product Description -->
-                    <div class="mb-3">
-                        <label for="productDescription" class="form-label">Product Description</label>
-                        <textarea class="form-control" id="productDescription" name="productDescription" rows="3" required></textarea>
-                        <div class="invalid-feedback">
-                            Product Description is required.
-                        </div>
-                    </div>
-            
-                    <!-- Product URL -->
-                    <div class="mb-3">
-                        <label for="productURL" class="form-label">Product URL</label>
-                        <input type="url" class="form-control" id="productURL" name="productURL" required>
-                        <div class="invalid-feedback">
-                            A valid URL is required.
-                        </div>
-                    </div>
-            
-                    <!-- Contact Information -->
-                    <fieldset class="border p-3">
-                        <legend class="w-auto px-2">Contact Information</legend>
-                        
-                        <!-- Contact Email -->
+                 <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                    <form action="https://formspree.io/f/mvgpywbn" method="POST">
+                        <!-- Product Name -->
                         <div class="mb-3">
-                            <label for="contactEmail" class="form-label">Contact Email</label>
-                            <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
-                            <div class="invalid-feedback">
-                                A valid email is required.
-                            </div>
+                            <label for="productName" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="productName" name="productName" required>
                         </div>
-            
-                        <!-- Contact Name -->
+                
+                        <!-- Product Description -->
                         <div class="mb-3">
-                            <label for="contactName" class="form-label">Contact Name</label>
-                            <input type="text" class="form-control" id="contactName" name="contactName" required>
-                            <div class="invalid-feedback">
-                                Contact Name is required.
-                            </div>
+                            <label for="productDescription" class="form-label">Product Description</label>
+                            <textarea class="form-control" id="productDescription" name="productDescription" required></textarea>
                         </div>
-            
-                        <!-- Contact Title -->
+                
+                        <!-- Product URL -->
                         <div class="mb-3">
-                            <label for="contactTitle" class="form-label">Contact Title</label>
-                            <input type="text" class="form-control" id="contactTitle" name="contactTitle" required>
-                            <div class="invalid-feedback">
-                                Contact Title is required.
+                            <label for="productURL" class="form-label">Product URL</label>
+                            <input type="url" class="form-control" id="productURL" name="productURL" required>
+                        </div>
+                
+                        <!-- Contact Information -->
+                        <fieldset class="border p-3">
+                            <legend class="w-auto px-2">Contact Details</legend>
+                            
+                            <!-- Contact Email -->
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
                             </div>
+                
+                            <!-- Contact Name -->
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="contactName" name="contactName" required>
+                            </div>
+                
+                            <!-- Contact Title -->
+                            <div class="mb-3">
+                                <label for="contactTitle" class="form-label">Job Title</label>
+                                <input type="text" class="form-control" id="contactTitle" name="contactTitle" required>
+                            </div>
+                        </fieldset>
+                
+                        <!-- Comments (Optional) -->
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Comments</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
                         </div>
-                    </fieldset>
-            
-                    <!-- Comments (Optional) -->
-                    <div class="mb-3">
-                        <label for="comments" class="form-label">Comments</label>
-                        <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
-                    </div>
-            
-                    <!-- Captcha (Placeholder for Captcha) -->
-                    <div class="mb-3">
-                        <label for="captcha" class="form-label">Captcha</label>
-                        <div class="g-recaptcha" data-sitekey="6LdFTTgqAAAAABcp2vGJ4dL8ZVElgEk4YDvbxJqY"></div> <!-- replace with your recaptcha SITE key not secret key -->
-      
-                        <div class="invalid-feedback">
-                            Captcha is required.
+                
+                        <!-- Captcha (Placeholder for Captcha) -->
+                        <div class="mb-3">
+                            <label for="captcha" class="form-label">Captcha</label>
+                            <div class="g-recaptcha" data-sitekey="6LdFTTgqAAAAABcp2vGJ4dL8ZVElgEk4YDvbxJqY"></div> <!-- replace with your recaptcha SITE key not secret key -->
                         </div>
-                    </div>
-            
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
             </div>
-
         </div>
+    </div>
+</div>
 
     </section>
 
