@@ -29,23 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Send email
         if (mail($to, $subject, $message, $headers)) {
-            // If mail sent, show success message and redirect to home page
-            echo "
-            <!DOCTYPE html>
-            <head>
-                <title>Form Submission Successful</title>
-                <meta http-equiv='refresh' content='5;url=https://www.howddy.com'>
-                <style>
-                    body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; }
-                </style>
-            </head>
-            <body>
-                <h2>Thank you! Your form has been successfully submitted.</h2>
-                <p>You will be redirected to the homepage in 5 seconds...</p>
-                <p>If you are not redirected, <a href='https://www.howddy.com'>click here</a>.</p>
-            </body>
-            </html>
-            ";
+            echo "Email sent successfully.";
         } else {
             echo "Failed to send email.";
         }
