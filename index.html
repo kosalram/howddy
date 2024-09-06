@@ -14,6 +14,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link href="css/navStyles.css" rel="stylesheet" />
 
     <!-- Font Awesome icons (free version)-->
@@ -754,7 +755,8 @@
                     <!-- Captcha (Placeholder for Captcha) -->
                     <div class="mb-3">
                         <label for="captcha" class="form-label">Captcha</label>
-                        <input type="text" class="form-control" id="captcha" name="captcha" placeholder="Enter the Captcha" required>
+                        <div class="g-recaptcha" data-sitekey="6LddQDgqAAAAAPH74dgqWy_HQ2QDaYZykqvNekgE"></div> <!-- replace with your recaptcha SITE key not secret key -->
+      
                         <div class="invalid-feedback">
                             Captcha is required.
                         </div>
