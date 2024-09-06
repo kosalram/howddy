@@ -681,6 +681,94 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="container mt-5">
+                <h2>Product Information Form</h2>
+                <form action="submitProjectForm.php" method="POST" novalidate>
+                    <!-- Product Name -->
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="productName" name="productName" required>
+                        <div class="invalid-feedback">
+                            Product Name is required.
+                        </div>
+                    </div>
+            
+                    <!-- Product Description -->
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Product Description</label>
+                        <textarea class="form-control" id="productDescription" name="productDescription" rows="3" required></textarea>
+                        <div class="invalid-feedback">
+                            Product Description is required.
+                        </div>
+                    </div>
+            
+                    <!-- Product URL -->
+                    <div class="mb-3">
+                        <label for="productURL" class="form-label">Product URL</label>
+                        <input type="url" class="form-control" id="productURL" name="productURL" required>
+                        <div class="invalid-feedback">
+                            A valid URL is required.
+                        </div>
+                    </div>
+            
+                    <!-- Contact Information -->
+                    <fieldset class="border p-3">
+                        <legend class="w-auto px-2">Contact Information</legend>
+                        
+                        <!-- Contact Email -->
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Contact Email</label>
+                            <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                            <div class="invalid-feedback">
+                                A valid email is required.
+                            </div>
+                        </div>
+            
+                        <!-- Contact Name -->
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Contact Name</label>
+                            <input type="text" class="form-control" id="contactName" name="contactName" required>
+                            <div class="invalid-feedback">
+                                Contact Name is required.
+                            </div>
+                        </div>
+            
+                        <!-- Contact Title -->
+                        <div class="mb-3">
+                            <label for="contactTitle" class="form-label">Contact Title</label>
+                            <input type="text" class="form-control" id="contactTitle" name="contactTitle" required>
+                            <div class="invalid-feedback">
+                                Contact Title is required.
+                            </div>
+                        </div>
+                    </fieldset>
+            
+                    <!-- Comments (Optional) -->
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+                    </div>
+            
+                    <!-- Captcha (Placeholder for Captcha) -->
+                    <div class="mb-3">
+                        <label for="captcha" class="form-label">Captcha</label>
+                        <input type="text" class="form-control" id="captcha" name="captcha" placeholder="Enter the Captcha" required>
+                        <div class="invalid-feedback">
+                            Captcha is required.
+                        </div>
+                    </div>
+            
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- Footer-->
     <footer class="footer text-center">
         <div class="container">
