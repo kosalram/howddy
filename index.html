@@ -700,6 +700,8 @@ opacity: 0;
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                     <form action="https://formspree.io/f/mvgpywbn" method="POST">
+                         <fieldset class="border p-3">
+                            <legend class="w-auto px-2">Contact Details</legend>
                         <!-- Product Name -->
                         <div class="mb-3">
                             <label for="productName" class="form-label">Product Name</label>
@@ -715,7 +717,7 @@ opacity: 0;
                         <!-- Product URL -->
                         <div class="mb-3">
                             <label for="productURL" class="form-label">Product URL</label>
-                            <input type="url" class="form-control" id="productURL" name="productURL" required>
+                            <input type="text" class="form-control" id="productURL" name="productURL" placeholder="www.howddy.com" required>
                         </div>
                 
                         <!-- Contact Information -->
@@ -755,6 +757,7 @@ opacity: 0;
                 
                         <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary">Submit</button>
+                            </fieldset>
                     </form>
             </div>
         </div>
