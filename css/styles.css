@@ -12,9 +12,13 @@
  */
 
  #conTitle{
-  font-size: 1.5rem;
-  
+  font-size: 1.5rem; 
 }
+
+ #contact{
+  padding-top: 0px;
+ }
+
 
 :root {
   --bs-blue: #0d6efd;
